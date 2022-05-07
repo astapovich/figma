@@ -145,6 +145,10 @@
         "value": "#212121",
         "type": "color"
       }
+    },
+    "test": {
+      "value": "#ffffff4d",
+      "type": "color"
     }
   },
   "md": {
