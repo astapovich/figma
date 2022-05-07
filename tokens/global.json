@@ -146,5 +146,11 @@
         "type": "color"
       }
     }
+  },
+  "md": {
+    "24": {
+      "value": 24,
+      "type": "sizing"
+    }
   }
 }
