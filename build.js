@@ -6,7 +6,7 @@ StyleDictionaryPackage.registerFormat({
     name: 'css/variables',
     formatter: function (dictionary, config) {
       return `${this.selector} {
-        ${dictionary.allProperties.map(prop => `  --${prop.name}: ${prop.value};`).join('\n')}
+        ${dictionary.allProperties.map(prop => `--${prop.name}: ${prop.value};`).join('\n')}
       }`
     }
   });  
@@ -32,7 +32,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/hsl"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/css"],
         "buildPath": `output/`,
         "files": [{
             "destination": `${theme}.css`,
