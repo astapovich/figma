@@ -2,14 +2,14 @@ const StyleDictionaryPackage = require('style-dictionary');
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
-StyleDictionary.registerFormat({
-  name: 'css/variables',
-  formatter: function({ dictionary }) {
-    return dictionary.allProperties.map(function(prop) {
-      return `<item name="${prop.name}">${prop.value}</item>`;
-    }).join('\n');
-  }
-});
+StyleDictionaryPackage.registerFormat({
+    name: 'css/variables',
+    formatter: function (dictionary, config) {
+      return `${this.selector} {
+        ${dictionary.allProperties.map(prop => `  --${prop.name}: ${prop.value};`).join('\n')}
+      }`
+    }
+  });  
 
 StyleDictionaryPackage.registerTransform({
     name: 'sizes/px',
