@@ -28,7 +28,7 @@ StyleDictionary.registerTransform({
   name: 'hexRGB/hexARGB',
   type: 'value',
   matcher: function(prop) {
-      return prop.category === '_colors';
+      return prop.attributes.category === '_colors';
   },
   transformer: function(prop) {
       // for sake of simplicity, in this example we assume colors are always in the format #xxxxxx
