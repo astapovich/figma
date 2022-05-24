@@ -24,6 +24,14 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
+StyleDictionaryPackage.registerTransform({
+    name: 'size/px',
+    type: 'value',
+    matcher: function(prop) {
+        return prop.value.match(/^[\d.]+px$/);
+    }
+});
+
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
