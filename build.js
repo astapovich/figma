@@ -1,4 +1,5 @@
 const StyleDictionaryPackage = require('style-dictionary');
+const Color = require('tinycolor2');
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
