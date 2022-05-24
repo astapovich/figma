@@ -11,18 +11,18 @@ StyleDictionaryPackage.registerFormat({
     }
   });  
 
-StyleDictionary.registerTransform({
-  name: 'size/px', // notice: the name is an override of an existing predefined method (yes, you can do it)
-  type: 'value',
-  matcher: function(prop) {
-      // this is an example of a possible filter (based on the "cti" values) to show how a "matcher" works
-      return prop.attributes.category === 'font' || prop.attributes.category === 'sizing';
-  },
-  transformer: function(prop) {
-      return `${prop.value}px`;
-  }
-});
-
+StyleDictionaryPackage.registerTransform({
+    name: 'sizes/px',
+    type: 'value',
+    matcher: function(prop) {
+        // You can be more specific here if you only want 'em' units for font sizes    
+        return ["fontSize", "spacing", "borderRadius", "borderWidth", "sizing"].includes(prop.attributes.category);
+    },
+    transformer: function(prop) {
+        // You can also modify the value here if you want to convert pixels to ems
+        return parseFloat(prop.original.value) + 'px';
+    }
+    });
 
 function getStyleDictionaryConfig(theme) {
   return {
