@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {},
     "dependencies": {
-        "style-dictionary": "^3.0.2"
+        "style-dictionary": "^3.0.2",
+        "tinycolor": "^0.0.1"
     }
 }
