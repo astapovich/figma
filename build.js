@@ -10,17 +10,19 @@ StyleDictionaryPackage.registerFormat({
       }`
     }
   });  
-
 StyleDictionaryPackage.registerTransform({
-    name: 'size/pxToPx',
+    name: 'sizes/px',
     type: 'value',
     matcher: function(prop) {
-        return prop.value.match(/^[\d\.]+px$/);
+        // You can be more specific here if you only want 'em' units for font sizes    
+        return ["fontSize", "spacing", "borderRadius", "borderWidth", "sizing"].includes(prop.attributes.category);
     },
     transformer: function(prop) {
-        return prop.value.replace(/px$/, 'px');
+        // You can also modify the value here if you want to convert pixels to ems
+          return prop.value.replace(/px$/, 'px');
     }
-});
+    });
+
 
 function getStyleDictionaryConfig(theme) {
   return {
