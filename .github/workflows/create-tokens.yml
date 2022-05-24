@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-node@v2.4.0
       # Install dependencies
       - run: npm install
+      - run: npm i tinycolor
       # Transform Figma Tokens JSON to something Style Dictionary can read
       - run: npx token-transformer tokens.json tokens/global.json global
       # Create a light theme, exclude the global tokens
