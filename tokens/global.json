@@ -145,16 +145,14 @@
         "value": "#212121",
         "type": "color"
       }
-    },
-    "test": {
-      "value": "#ffffff4d",
-      "type": "color"
     }
   },
-  "md": {
-    "24": {
-      "value": 24,
-      "type": "sizing"
+  "sizing": {
+    "md": {
+      "24": {
+        "value": 24,
+        "type": "sizing"
+      }
     }
   },
   "main": {
