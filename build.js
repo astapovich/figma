@@ -1,5 +1,4 @@
 const StyleDictionaryPackage = require('style-dictionary');
-const Color = require('tinycolor2');
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
@@ -24,22 +23,6 @@ StyleDictionaryPackage.registerTransform({
         return parseFloat(prop.original.value) + 'px';
     }
     });
-
-StyleDictionary.registerTransform({
-  name: 'color/css',
-  type: 'value',
-  matcher: function(prop) {
-    return prop.attributes.category === '_colors';
-  },
-  transformer: function(prop) {
-      var color = Color(prop.value);
-      if (color.getAlpha() === 1) {
-        return color.toHexString();
-      } else {
-        return color.toRgbString();
-      }
-  }
-});
 
 function getStyleDictionaryConfig(theme) {
   return {
