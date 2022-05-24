@@ -24,6 +24,22 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
+StyleDictionary.registerTransform({
+  name: 'color/css',
+  type: 'value',
+  matcher: function(prop) {
+    return prop.attributes.category === 'color';
+  },
+  transformer: function(prop) {
+      var color = Color(prop.value);
+      if (color.getAlpha() === 1) {
+        return color.toHexString();
+      } else {
+        return color.toRgbString();
+      }
+  }
+});
+
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
@@ -31,7 +47,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/css"],
         "buildPath": `output/`,
         "files": [{
             "destination": `${theme}.css`,
