@@ -156,5 +156,9 @@
       "value": 24,
       "type": "sizing"
     }
+  },
+  "base": {
+    "value": 16,
+    "type": "fontSizes"
   }
 }
