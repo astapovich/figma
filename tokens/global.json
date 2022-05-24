@@ -155,8 +155,12 @@
       }
     }
   },
-  "main": {
-    "value": 16,
-    "type": "fontSizes"
+  "fontSize": {
+    "main": {
+      "16": {
+        "value": 16,
+        "type": "fontSizes"
+      }
+    }
   }
 }
