@@ -24,6 +24,12 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
+StyleDictionaryPackage.registerTransformGroup({
+    name: 'tokens-scss',
+    // to see the pre-defined "scss" transformation use: console.log(StyleDictionaryPackage.transformGroup['scss']);
+    transforms: [ "name/cti/kebab", "time/seconds", "size/px", "color/css" ]
+});
+
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
