@@ -27,7 +27,7 @@ StyleDictionaryPackage.registerTransform({
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
-      `tokens/${theme}.json`,
+      `tokens.json`,
     ],
     "platforms": {
       "web": {
