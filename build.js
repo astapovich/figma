@@ -19,7 +19,7 @@ StyleDictionaryPackage.registerTransform({
     },
     transformer: function(prop) {
         // You can also modify the value here if you want to convert pixels to ems
-          return prop.value.replace(/px$/, 'px');
+          return prop.value.replace(/\.[^\.]+$/, 'px');
     }
     });
 
