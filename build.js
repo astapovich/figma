@@ -34,8 +34,8 @@ function getStyleDictionaryConfig(theme) {
         "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
         "buildPath": `output/`,
         "files": [{
-            "destination": `${theme}.css`,
-            "format": "css/variables",
+            "destination": `${theme}.scss`,
+            "format": "scss/variables",
             "selector": `.${theme}-theme`
           }]
       }
