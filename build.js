@@ -31,7 +31,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "time/seconds", "content/icon", "size/rem", "color/hsl"]
+        "transforms": ["attribute/cti", "name/cti/kebab", "time/seconds", "content/icon", "size/rem", "color/hsl"],
         "buildPath": `output/`,
         "files": [{
             "destination": `${theme}.css`,
