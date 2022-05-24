@@ -14,12 +14,12 @@ StyleDictionaryPackage.registerFormat({
 StyleDictionary.registerTransform({
   name: 'size/px', // notice: the name is an override of an existing predefined method (yes, you can do it)
   type: 'value',
-  matcher: function(token) {
+  matcher: function(prop) {
       // this is an example of a possible filter (based on the "cti" values) to show how a "matcher" works
-      return token.attributes.category === 'font' || token.attributes.category === 'sizing';
+      return prop.attributes.category === 'font' || prop.attributes.category === 'sizing';
   },
-  transformer: function(token) {
-      return `${token.value}px`;
+  transformer: function(prop) {
+      return `${prop.value}px`;
   }
 });
 
