@@ -24,17 +24,6 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
-StyleDictionary.registerTransform({
-  name: 'hexRGB/hexARGB',
-  type: 'value',
-  matcher: function(prop) {
-      return prop.attributes.category === '_colors';
-  },
-  transformer: function(prop) {
-      // for sake of simplicity, in this example we assume colors are always in the format #xxxxxx
-      return prop.value.replace(/^#/,'#FF');
-  }
-});
 
 function getStyleDictionaryConfig(theme) {
   return {
@@ -43,7 +32,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "hexRGB/hexARGB"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/hsl"],
         "buildPath": `output/`,
         "files": [{
             "destination": `${theme}.css`,
