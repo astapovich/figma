@@ -1,0 +1,10 @@
+{
+  "test": {
+    "value": "#7f3b3b",
+    "type": "color"
+  },
+  "red": {
+    "value": "#f00",
+    "type": "color"
+  }
+}
