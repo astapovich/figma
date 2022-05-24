@@ -31,14 +31,11 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/hsl"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
         "buildPath": `output/`,
         "files": [{
-            "destination": `${theme}.scss`,
-            "format": "scss/variables",
-            "options": {
-              "outputReferences": true
-            },
+            "destination": `${theme}.css`,
+            "format": "css/variables",
             "selector": `.${theme}-theme`
           }]
       }
