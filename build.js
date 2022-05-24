@@ -3,7 +3,7 @@ const StyleDictionaryPackage = require('style-dictionary');
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
 StyleDictionaryPackage.registerFormat({
-    name: 'css/variables',
+    name: 'scss/variables',
     formatter: function (dictionary, config) {
       return `${this.selector} {
         ${dictionary.allProperties.map(prop => `  --${prop.name}: ${prop.value};`).join('\n')}
@@ -31,11 +31,11 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "color/hsl"],
         "buildPath": `output/`,
         "files": [{
-            "destination": `${theme}.css`,
-            "format": "css/variables",
+            "destination": `${theme}.scss`,
+            "format": "scss/variables",
             "options": {
               "outputReferences": true
             },
