@@ -28,7 +28,7 @@ StyleDictionary.registerTransform({
   name: 'color/css',
   type: 'value',
   matcher: function(prop) {
-    return prop.attributes.category === 'color';
+    return prop.attributes.category === '_colors';
   },
   transformer: function(prop) {
       var color = Color(prop.value);
