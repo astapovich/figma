@@ -10,6 +10,7 @@ StyleDictionaryPackage.registerFormat({
       }`
     }
   });  
+
 StyleDictionaryPackage.registerTransform({
     name: 'sizes/px',
     type: 'value',
@@ -19,10 +20,9 @@ StyleDictionaryPackage.registerTransform({
     },
     transformer: function(prop) {
         // You can also modify the value here if you want to convert pixels to ems
-          return prop.value.replace(/\.[^\.]+$/, 'px');
+        return parseFloat(prop.original.value) + "px";
     }
     });
-
 
 function getStyleDictionaryConfig(theme) {
   return {
@@ -31,7 +31,7 @@ function getStyleDictionaryConfig(theme) {
     ],
     "platforms": {
       "web": {
-        "transforms": ["attribute/cti", "name/cti/kebab", "size/px"],
+        "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
         "buildPath": `output/`,
         "files": [{
             "destination": `${theme}.css`,
