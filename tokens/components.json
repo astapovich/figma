@@ -1,8 +1,16 @@
 {
-  "sizing": {
-    "button": {
-      "12": {
+  "button": {
+    "sizing": {
+      "md": {
         "value": 12,
+        "type": "sizing"
+      }
+    }
+  },
+  "card": {
+    "sizing": {
+      "ls": {
+        "value": 32,
         "type": "sizing"
       }
     }
