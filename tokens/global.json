@@ -160,9 +160,5 @@
       "value": 32,
       "type": "sizing"
     }
-  },
-  "sizing-button-medium": {
-    "value": 24,
-    "type": "sizing"
   }
 }
