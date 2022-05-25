@@ -162,15 +162,15 @@
     }
   },
   "size": {
-    "alias": {
-      "medium": {
-        "value": 32,
-        "type": "sizing"
-      },
-      "large": {
-        "value": 40,
-        "type": "sizing"
-      }
+    "medium": {
+      "value": 32,
+      "type": "sizing",
+      "description": "alias"
+    },
+    "large": {
+      "value": 40,
+      "type": "sizing",
+      "description": "alias"
     }
   }
 }
