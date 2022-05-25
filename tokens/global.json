@@ -167,12 +167,10 @@
       }
     }
   },
-  "button": {
-    "sizing": {
-      "medium": {
-        "value": 32,
-        "type": "sizing"
-      }
+  "sizing": {
+    "medium": {
+      "value": 32,
+      "type": "sizing"
     }
   }
 }
