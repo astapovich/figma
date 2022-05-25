@@ -24,6 +24,13 @@ StyleDictionaryPackage.registerTransform({
     }
     });
 
+StyleDictionary.registerFilter({
+  name: 'isColor',
+  matcher: function(prop) {
+    return (!(prop.attributes.category === "alias" || prop.alias)) && prop.type === 'color';
+  }
+})
+
 
 function getStyleDictionaryConfig(theme) {
   return {
@@ -37,6 +44,7 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
+            "filter": "isColor",
             "selector": `.${theme}-theme`
           }]
       }
