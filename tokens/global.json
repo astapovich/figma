@@ -170,7 +170,7 @@
     "large": {
       "value": 40,
       "type": "sizing",
-      "description": "alias"
+      "alias": "alias"
     }
   }
 }
