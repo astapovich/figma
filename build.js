@@ -27,7 +27,7 @@ StyleDictionaryPackage.registerTransform({
 StyleDictionaryPackage.registerFilter({
   name: 'isAlias',
   matcher: function(prop) {
-    return (!(prop.attributes.category === "alias" || prop.description === "alias" || prop.alias));
+    return (!(prop.attributes.category === "alias" || prop.alias));
   }
 })
 
