@@ -147,10 +147,14 @@
       }
     }
   },
-  "sizing": {
-    "md": {
-      "24": {
+  "card": {
+    "sizing": {
+      "md": {
         "value": 24,
+        "type": "sizing"
+      },
+      "ls": {
+        "value": 12,
         "type": "sizing"
       }
     }
@@ -160,6 +164,14 @@
       "16": {
         "value": 16,
         "type": "fontSizes"
+      }
+    }
+  },
+  "button": {
+    "sizing": {
+      "medium": {
+        "value": 32,
+        "type": "sizing"
       }
     }
   }
