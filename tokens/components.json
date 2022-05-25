@@ -1,19 +1,12 @@
 {
-  "button": {
-    "sizing": {
-      "md": {
-        "value": "{card.sizing.md}/2",
-        "type": "sizing",
-        "failedToResolve": true
-      }
+  "card": {
+    "ls": {
+      "value": 32,
+      "type": "sizing"
     }
   },
-  "card": {
-    "sizing": {
-      "ls": {
-        "value": 32,
-        "type": "sizing"
-      }
-    }
+  "color-button-background-primary--default": {
+    "value": "#6475f7",
+    "type": "color"
   }
 }
