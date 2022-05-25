@@ -44,7 +44,7 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "filter": "isColor",
+           // "filter": "isColor",
             "selector": `.${theme}-theme`
           }]
       }
