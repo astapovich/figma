@@ -164,11 +164,13 @@
   "size": {
     "medium": {
       "value": 32,
-      "type": "sizing"
+      "type": "sizing",
+      "description": "alias"
     },
     "large": {
       "value": 40,
-      "type": "sizing"
+      "type": "sizing",
+      "description": "alias"
     }
   }
 }
