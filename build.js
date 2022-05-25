@@ -32,9 +32,9 @@ StyleDictionaryPackage.registerFilter({
 })
 
 StyleDictionaryPackage.registerFilter({
-  name: 'isButton',
+  name: 'isComponent',
   matcher: function(prop) {
-    return prop.attributes.category === 'button';
+    return prop.attributes.category === 'component';
   }
 })
 
@@ -51,7 +51,7 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "filter": "isButton",
+            "filter": "isColor",
             "selector": `.${theme}-theme`
           }]
       }
