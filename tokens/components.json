@@ -1,12 +1,60 @@
 {
-  "card": {
-    "ls": {
-      "value": 32,
+  "lifestylebadge": {
+    "height": {
+      "value": 34,
       "type": "sizing"
+    },
+    "border_radius": {
+      "value": 17,
+      "type": "sizing"
+    },
+    "padding": {
+      "start": {
+        "value": 34,
+        "type": "sizing"
+      },
+      "end": {
+        "value": 34,
+        "type": "sizing"
+      }
+    },
+    "icon_size": {
+      "value": 17,
+      "type": "sizing"
+    },
+    "spacing_icon_text": {
+      "value": 17,
+      "type": "sizing"
+    },
+    "base": {
+      "text_color": {
+        "value": "#8b98f9",
+        "type": "color"
+      },
+      "background_color": {
+        "value": "#eceefe",
+        "type": "color"
+      }
+    },
+    "selected": {
+      "text_color": {
+        "value": "#3142c4",
+        "type": "color"
+      },
+      "background_color": {
+        "value": "#eceefe",
+        "type": "color"
+      }
     }
   },
-  "color-button-background-primary--default": {
-    "value": "#6475f7",
-    "type": "color"
+  "badge": {
+    "height": {
+      "value": 34,
+      "type": "sizing"
+    },
+    "border_radius": {
+      "value": 17,
+      "type": "sizing"
+    }
   }
 }
