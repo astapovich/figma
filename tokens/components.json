@@ -2,8 +2,9 @@
   "button": {
     "sizing": {
       "md": {
-        "value": 12,
-        "type": "sizing"
+        "value": "{card.sizing.md}/2",
+        "type": "sizing",
+        "failedToResolve": true
       }
     }
   },
