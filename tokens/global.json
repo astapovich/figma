@@ -1,5 +1,5 @@
 {
-  "_colors": {
+  "alias": {
     "black": {
       "value": "#171717eb",
       "type": "color"
@@ -51,10 +51,6 @@
       },
       "950": {
         "value": "#100105",
-        "type": "color"
-      },
-      "1000": {
-        "value": "#bd3b3b",
         "type": "color"
       }
     },
@@ -163,12 +159,6 @@
         "value": 32,
         "type": "sizing"
       }
-    }
-  },
-  "alias": {
-    "test_color": {
-      "value": "#bd3b3b",
-      "type": "color"
     }
   }
 }
