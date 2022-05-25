@@ -160,5 +160,11 @@
         "type": "sizing"
       }
     }
+  },
+  "alias": {
+    "test_color": {
+      "value": "#bd3b3b",
+      "type": "color"
+    }
   }
 }
