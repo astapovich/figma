@@ -25,7 +25,7 @@ StyleDictionaryPackage.registerTransform({
     });
 
 StyleDictionaryPackage.registerFilter({
-  name: 'isToken',
+  name: 'isAlias',
   matcher: function(prop) {
     return (!(prop.attributes.category === "alias" || prop.description === "alias" || prop.alias));
   }
@@ -58,7 +58,7 @@ function getStyleDictionaryConfig(theme) {
         "files": [{
             "destination": `${theme}.css`,
             "format": "css/variables",
-            "filter": "isToken",
+            "filter": "isAlias",
             "selector": `.${theme}-theme`
           }]
       }
