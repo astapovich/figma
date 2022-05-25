@@ -1,1 +1,10 @@
-{}
+{
+  "sizing": {
+    "button": {
+      "12": {
+        "value": 12,
+        "type": "sizing"
+      }
+    }
+  }
+}
