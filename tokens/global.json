@@ -155,10 +155,12 @@
       }
     }
   },
-  "sizing": {
-    "medium_size": {
-      "value": 32,
-      "type": "sizing"
+  "button": {
+    "height": {
+      "medium": {
+        "value": 32,
+        "type": "sizing"
+      }
     }
   }
 }
