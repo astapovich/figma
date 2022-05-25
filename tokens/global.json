@@ -154,11 +154,21 @@
         "type": "fontSizes"
       }
     },
-    "height": {
+    "size": {
       "medium": {
         "value": 32,
         "type": "sizing"
       }
+    }
+  },
+  "size": {
+    "medium": {
+      "value": 32,
+      "type": "sizing"
+    },
+    "large": {
+      "value": 40,
+      "type": "sizing"
     }
   }
 }

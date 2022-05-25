@@ -35,5 +35,7 @@
   --color-grey-900: #323232;
   --color-grey-950: #212121;
   --button-font-size-medium: 16px;
-  --button-height-medium: 32px;
+  --button-size-medium: 32px;
+  --size-medium: 32px;
+  --size-large: 40px;
       }
